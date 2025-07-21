@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Teléfono de disco",
+    "price": 35,
+    "img": "https://images.unsplash.com/photo-1450818074504-fb9713fe584e?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8b2xkJTIwdGVsZXBob25lfGVufDB8fDB8fHww",
+    "quanty": 1
+  },
+  {
+    "id": 2,
+    "name": "Reloj de pared retro",
+    "price": 25,
+    "img": "https://images.unsplash.com/photo-1528387810833-7b46bb8e8778?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8dmludGFnZSUyMGNsb2NrfGVufDB8fDB8fHww",
+    "quanty": 1
+  },
+  {
+    "id": 3,
+    "name": "Lámpara lava años 70",
+    "price": 40,
+    "img": "https://plus.unsplash.com/premium_photo-1725293214712-cab6d8778e40?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGxhdmElMjBsYW1wfGVufDB8fDB8fHww",
+    "quanty": 1
+  },
+  {
+    "id": 4,
+    "name": "Radio AM/FM estilo antiguo",
+    "price": 60,
+    "img": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cmFkaW98ZW58MHx8MHx8fDA%3D",
+    "quanty": 1
+  },
+  {
+    "id": 5,
+    "name": "Dispenser de Coca-Cola",
+    "price": 18,
+    "img": "https://images.unsplash.com/photo-1743255043898-a9aa62da3aec?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29jYSUyMGNvbGElMjB2aW50YWdlJTIwZGVjb3xlbnwwfHwwfHx8MA%3D%3D",
+    "quanty": 1
+  },
+  {
+    "id": 6,
+    "name": "Espejo de sol dorado",
+    "price": 45,
+    "img": "https://images.unsplash.com/photo-1646541454304-b6597ec56421?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dmludGFnZSUyMG1pcnJvcnxlbnwwfHwwfHx8MA%3D%3D",
+    "quanty": 1
+  },
+  {
+    "id": 7,
+    "name": "Máquina de escribir vintage",
+    "price": 120,
+    "img": "https://plus.unsplash.com/premium_photo-1725075087986-9b2d97ef8c66?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dHlwaW5nJTIwbWFjaGluZXxlbnwwfHwwfHx8MA%3D%3D",
+    "quanty": 1
+  },
+  {
+    "id": 8,
+    "name": "Cámara Polaroid retro",
+    "price": 75,
+    "img": "https://images.unsplash.com/photo-1516962126636-27ad087061cc?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cG9sYXJvaWQlMjBjYW1lcmF8ZW58MHx8MHx8fDA%3D",
+    "quanty": 1
+  }
+]
