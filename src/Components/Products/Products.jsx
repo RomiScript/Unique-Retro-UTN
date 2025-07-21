@@ -1,34 +1,37 @@
-import { useState, useEffect } from "react";
-import './Products.css';
-
-const Products = () => {
-    const [products, setProducts] = useState([]);
-
-    useEffect(() => {
-        fetch('/data.json')
-            .then(response => response.json())
-            .then(data => setProducts(data))
-           
-
-    }, []);
-
-    return products.map(product => (
-        <div className="card" key={product.id}>
-            <h2>{product.name}</h2>
-            <img src={product.img} alt={product.name} />
-            <p>Price: ${product.price}</p>
-            <p>Quantity: {product.quanty}</p>
-            <button>Comprar</button>
-        </div>
-    ));
+import React from "react";
 
 
-        
+
+import { Link } from "react-router-dom";
+import "./Products.css";
+
+const Products = ({ products }) => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="products-container">
+      {Array.isArray(products) && products.length > 0 ? (
+  products.map((product) => (
+    <div key={product.sku} className="product-card">
+      <img src={product.img} alt={product.name} className="product-image" />
+      <div className="product-info">
+        <h2 className="product-name">{product.name}</h2>
+        
+        
+        
 
-export default Products
+        <Link to={`/product/${product.sku}`} className="buy-button">
+
+          <button>Ver detalles</button>
+        </Link>
+      </div>
+    </div>
+  ))
+) : (
+  <div className="no-products">
+    <p>No hay productos disponibles.</p>
+  </div>
+)}
+    </div>
+  );
+};
+
+export default Products;
