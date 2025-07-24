@@ -17,7 +17,7 @@ function App() {
       </BrowserRouter>
 
 
-      <footer>
+      <footer className="footer">
         <p>© 2025 RomiScript, todos los derechos reservados.</p>
       </footer>
       

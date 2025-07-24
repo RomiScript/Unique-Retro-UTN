@@ -1,27 +1,33 @@
 import { useEffect, useState } from "react";
-import Banner from "../Banner/Banner";
+import { collection, getDocs } from "firebase/firestore";
 import Navbar from "../Navbar/Navbar";
 import Products from "../Products/Products";
+import Banner from "../../Components/Banner/Banner"; 
+
+import { db } from "../../firebase/config";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data))
-      .catch((err) => console.error("Error al cargar productos:", err));
+    const fetchProducts = async () => {
+      const querySnapshot = await getDocs(collection(db, "products"));
+      const productsData = querySnapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setProducts(productsData.slice(0, 4)); 
+    };
+    fetchProducts();
   }, []);
 
   return (
-    <>
+      <div className="home-container">
       <Navbar />
       <Banner />
-      <div className="product-card-container">
-        <Products products={products} />
-      </div>
-    </>
+      <h2 className="home-title">Productos Destacados</h2>
+      <Products products={products} /> {/* Paso los productos filtrados */}
+    </div>
   );
 };
-
 export default Home;

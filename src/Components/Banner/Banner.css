@@ -1,4 +1,13 @@
 .banner {
+  background-color: #5a3921; 
+  color: #f8f1e7; 
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+.banner {
     background-size: cover;
     background-position: center;
     height: 80vh;
