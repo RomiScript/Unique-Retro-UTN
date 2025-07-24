@@ -5,7 +5,7 @@ import { db } from '../../firebase/config';
 import './ProductDetails.css';
 
 const ProductDetails = () => {
-  const { id } = useParams(); // id = SKU del producto
+  const { id } = useParams(); 
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -13,7 +13,7 @@ const ProductDetails = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        // 1. Consulta Firestore para buscar el producto por SKU
+        
         const productsRef = collection(db, 'products');
         const q = query(productsRef, where('sku', '==', id));
         const querySnapshot = await getDocs(q);
