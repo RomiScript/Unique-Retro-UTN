@@ -1,68 +1,110 @@
 .auth-container {
   max-width: 400px;
-  margin: 2rem auto;
-  padding: 2rem;
+  margin: auto;
+  padding: 2.5rem 2rem;
   background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(247, 118, 26, 0.08), 0 1.5px 6px rgba(212, 11, 11, 0.06);
 }
 
 .input-group {
   margin-bottom: 1.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #faf7f4;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0cfc2;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 .input-group label {
-  display: block;
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #5a3921;
+  margin-bottom: 0.3rem;
   font-weight: 500;
+  transition: color 0.2s;
+  cursor: pointer;
+  user-select: none;
+  display: block;
+  position: relative;
+  padding-left: 0.5rem;
+  background: #faf7f4;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  
+
 }
 
 .input-group input {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  padding: 0.7rem 1rem;
+  border: px solid #77451c;
+  border-radius: 6px;
   font-size: 1rem;
+  background: #faf7f4;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #5a3921;
+  outline: none;
+  background: #fff;
 }
 
 .forgot-password {
   display: block;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
   text-align: right;
   font-size: 0.85rem;
-  color: #5a3921;
+  color: #7a5a3a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: #3a2414;
+  text-decoration: underline;
 }
 
 button[type="submit"] {
   width: 100%;
-  padding: 0.75rem;
-  background-color: #5a3921;
-  color: white;
+  padding: 0.8rem;
+  background: linear-gradient(90deg, #5a3921 60%, #7a5a3a 100%);
+  color: #fff;
   border: none;
-  border-radius: 4px;
-  font-size: 1rem;
+  border-radius: 6px;
+  font-size: 1.08rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background 0.3s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(90, 57, 33, 0.08);
+  letter-spacing: 0.01em;
 }
 
-button[type="submit"]:hover {
-  background-color: #3a2414;
+button[type="submit"]:hover:not(.loading) {
+  background: linear-gradient(90deg, #3a2414 60%, #5a3921 100%);
+  box-shadow: 0 4px 16px rgba(90, 57, 33, 0.12);
 }
 
 button[type="submit"].loading {
-  background-color: #7a5a3a;
+  background: #bfa07a;
   cursor: not-allowed;
+  opacity: 0.85;
 }
 
 .spinner-btn {
   display: inline-block;
-  width: 1rem;
-  height: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
   border: 2px solid rgba(255,255,255,0.3);
   border-radius: 50%;
-  border-top-color: white;
-  animation: spin 1s ease-in-out infinite;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
   margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 @keyframes spin {
@@ -71,25 +113,41 @@ button[type="submit"].loading {
 
 .success-message {
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 1rem;
+  background: #f4fff6;
+  border-radius: 8px;
+  border: 1px solid #c8e6c9;
 }
 
 .success-message h2 {
-  color: #4CAF50;
+  color: #388e3c;
   margin-bottom: 1rem;
+  font-weight: 700;
 }
 
 .error-message {
   color: #d32f2f;
   background: #fce4e4;
-  padding: 0.75rem;
-  border-radius: 4px;
-  margin-bottom: 1.5rem;
-  font-size: 0.9rem;
+  padding: 0.85rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1.25rem;
+  font-size: 0.97rem;
+  border: 1px solid #f8bbbc;
 }
 
 .auth-footer {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.97rem;
+  color: #7a5a3a;
+}
+
+.auth-footer a {
+  color: #5a3921;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.auth-footer a:hover {
+  color: #3a2414;
 }
