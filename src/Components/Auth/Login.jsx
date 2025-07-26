@@ -20,7 +20,7 @@ const Login = () => {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       setSuccess(true);
-      setTimeout(() => navigate("/"), 1500); // Redirige al home en de 1.5 segundos
+      setTimeout(() => navigate("/"), 1500); 
     } catch (error) {
       // Mensajes de error más piolas 🐰
       switch(error.code) {
@@ -101,7 +101,7 @@ const Login = () => {
       </form>
 
       <div className="auth-footer">
-        <p>¿No tienes cuenta? <Link to="/register">Crea una aquí</Link></p>
+        <p>¿No tenés cuenta? <Link to="/register">Crea una aquí</Link></p>
       </div>
     </div>
   );

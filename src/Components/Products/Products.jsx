@@ -11,10 +11,9 @@ const Products = ({ products }) => {
             <img src={product.img} alt={product.name} className="product-image" />
             <div className="product-info">
               <h2 className="product-name">{product.name}</h2>
-              <p className="product-price">${product.price.toLocaleString()}</p> {/* Formato de precio */}
+              <p className="product-price">${product.price.toLocaleString()}</p> 
               <p className="product-sku">SKU: {product.sku}</p>
-              <p className="product-description">{product.description.substring(0, 60)}...</p> {/* Descripción corta */}
-              <Link to={`/product/${product.sku}`} className="detail-link">
+              <p className="product-description">{product.description.substring(0, 60)}...</p> 
                 <button className="detail-button">Ver detalles</button>
               </Link>
             </div>
