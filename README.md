@@ -1,6 +1,6 @@
 ## Unique Retro - Mini Ecommerce en React
 
-Este es un proyecto desarrollado como entrega final para la diplomatura Full-stack (UTN), específicamente React. Consiste en una tienda online retro con productos ficticios, autenticación de usuarios y detalles de productos conectados a Firebase. Me ayudé con DeepSeek para ver como debería lucir el README.md pero no lo copié tal cual.
+Este es un proyecto desarrollado como entrega final para la diplomatura Full-stack (UTN), específicamente React. Consiste en una tienda online retro con productos ficticios, autenticación de usuarios y detalles de productos conectados a Firebase. Me ayudé con DeepSeek para ver como debería lucir el README.md pero no lo copié tal cual. Puede parecer sobrecomentado pero en algún momento necesité comentar todo para no perderme, luego los eliminé pero decidí volver a ponerlos.
 
 ---
 
@@ -43,7 +43,7 @@ Iniciá el servidor de desarrollo:
 npm run dev
 
 REPO: https://github.com/RomiScript/Unique-Retro-UTN
-DEPLOY:
+DEPLOY: https://vercel.com/romiscripts-projects/unique-retro-utn/C28n8WrPL1LyLhKhCYWpVLtRDutK
 
 Notas:
 Los productos son completamente ficticios.
