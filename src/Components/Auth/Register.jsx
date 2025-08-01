@@ -5,33 +5,38 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import './Register.css';
 
+// Componente de registro de usuario
 const Register = () => {
+  // Estados para los campos del formulario
   const [nombre, setNombre] = useState("");
   const [apellido, setApellido] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  // Estados para manejar errores, éxito y carga
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
+  // Manejo del submit del formulario
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError("");
 
     try {
+      // Creo el usuario en Firebase Auth
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
 
-      // 1. Guardar displayName en Auth
+      // Actualizo el displayName en Auth con nombre y apellido
       await updateProfile(user, {
         displayName: `${nombre} ${apellido}`,
       });
 
-      // 2. Crear documento en Firestore
+      // Guardo los datos del usuario en Firestore
       await setDoc(doc(db, "users", user.uid), {
         nombre,
         apellido,
@@ -41,8 +46,10 @@ const Register = () => {
       });
 
       setSuccess(true);
+      // Redirijo al home después de 2 segundos
       setTimeout(() => navigate("/"), 2000);
     } catch (error) {
+      // Manejo de errores, muestro mensaje si el email ya está registrado
       setError(error.message.includes("email-already")
         ? "Este email ya está registrado"
         : "Error en el registro");
@@ -51,6 +58,7 @@ const Register = () => {
     }
   };
 
+  // Si el registro fue exitoso, muestro mensaje y spinner
   if (success) {
     return (
       <div className="auth-container">
@@ -63,6 +71,7 @@ const Register = () => {
     );
   }
 
+  // Render del formulario de registro
   return (
     <div className="auth-container">
       <h2>Crear cuenta</h2>
