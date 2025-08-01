@@ -17,21 +17,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f8f1e7; /* Color retro claro */
-  border-bottom: 2px solid #d4a76a; /* Borde estilo vintage */
-  font-family: 'Courier New', monospace; /* Tipografía retro */
+  background-color: #f8f1e7;
+  border-bottom: 2px solid #d4a76a;
+  font-family: 'Courier New', monospace; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo a {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #5a3921; /* Marrón retro */
+  color: #5a3921; 
   text-decoration: none;
 }
 
 .navbar-logo a:hover {
-  color: #d4a76a; /* Efecto hover dorado */
+  color: #d4a76a; 
 }
 
 .navbar-links {
@@ -50,7 +50,7 @@
   color: #d4a76a;
 }
 
-/* Estilo especial para el ícono del carrito, aún no es funcional*/
+/* El cart es decorativo por ahora*/
 .nav-link:last-child {
   font-size: 1.2rem;
 }

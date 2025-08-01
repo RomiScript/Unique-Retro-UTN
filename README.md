@@ -1,12 +1,59 @@
-# React + Vite
+## Unique Retro - Mini Ecommerce en React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto desarrollado como entrega final para la diplomatura Full-stack (UTN), específicamente React. Consiste en una tienda online retro con productos ficticios, autenticación de usuarios y detalles de productos conectados a Firebase. Me ayudé con DeepSeek para ver como debería lucir el README.md pero no lo copié tal cual.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Funcionalidades
 
-## Expanding the ESLint configuration
+- Página de inicio con listado de productos (nombre, precio, SKU, descripción)
+- Página de detalle de producto con más información
+- Registro de usuarios (nombre, apellido, email, contraseña)
+- Login de usuarios con Firebase Authentication
+- Feedback visual en login y registro (errores, loading, mensajes de éxito)
+- Navegación entre secciones con React Router
+- Responsive
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+##  Tecnologías utilizadas
+
+- ⚛️ React
+- 🔥 Firebase (Auth + Firestore)
+- 📦 React Router DOM
+- 💄 CSS personalizado
+- 📁 Vite como entorno de desarrollo
+
+---
+
+##  Instalación
+
+1. Clonar este repositorio:
+   ```bash
+   git clone https://github.com/tu-usuario/unique-retro.git
+   cd unique-retro
+
+Luego:
+npm install
+
+Iniciá el servidor de desarrollo:
+
+ ```bash:
+
+npm run dev
+
+REPO: https://github.com/RomiScript/Unique-Retro-UTN
+DEPLOY:
+
+Notas:
+Los productos son completamente ficticios.
+
+Este proyecto es académico, no comercial.
+
+Para fines de autenticación y prueba se recomienda usar correos de prueba (Firebase no permite usuarios sin correo válido).
+
+👩‍💻  Desarrollado por:
+Romina Martínez
+
+
+
