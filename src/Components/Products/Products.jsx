@@ -14,6 +14,7 @@ const Products = ({ products }) => {
               <p className="product-price">${product.price.toLocaleString()}</p> 
               <p className="product-sku">SKU: {product.sku}</p>
               <p className="product-description">{product.description.substring(0, 60)}...</p> 
+              <Link to={`/product/${product.sku}`}>
                 <button className="detail-button">Ver detalles</button>
               </Link>
             </div>

@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import Navbar from "../Navbar/Navbar";
 import Products from "../Products/Products";
-import Banner from "../../Components/Banner/Banner"; 
+import Banner from "../../Components/Banner/Banner";
 
 import { db } from "../../firebase/config";
 
@@ -16,18 +16,19 @@ const Home = () => {
         id: doc.id,
         ...doc.data()
       }));
-      setProducts(productsData.slice(0, 4)); 
+      setProducts(productsData.slice(0, 4));
     };
     fetchProducts();
   }, []);
 
   return (
-      <div className="home-container">
+    <div className="home-container">
       <Navbar />
       <Banner />
       <h2 className="home-title">Productos Destacados</h2>
-      <Products products={products} /> {/* Paso los productos filtrados */}
+      <Products products={products} />
     </div>
   );
 };
+
 export default Home;

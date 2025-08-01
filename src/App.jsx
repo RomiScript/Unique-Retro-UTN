@@ -4,26 +4,25 @@ import ProductDetails from "./Components/ProductDetails/ProductDetails";
 import Login from "./Components/Auth/Login";
 import Register from "./Components/Auth/Register";
 
+
 function App() {
   return (
-    <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-             <Route path="/product/:id" element={<ProductDetails />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />          
-        </Routes>
-      </BrowserRouter>
+   
 
+      <><BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
-      <footer className="footer">
+      </Routes>
+
+    </BrowserRouter><footer className="footer">
         <p>© 2025 RomiScript, todos los derechos reservados.</p>
-      </footer>
-      
-    </>
+      </footer></>
+    
   );
 }
 
 export default App;
-

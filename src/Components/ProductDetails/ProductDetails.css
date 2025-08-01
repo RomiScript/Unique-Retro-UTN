@@ -20,7 +20,7 @@
   width: 100%;
   max-width: 420px;
   border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(90, 57, 33, 0.13);
+  box-shadow: 0 6px 16px rgba(91, 107, 3, 0.13);
   object-fit: cover;
   background: #f6e7d7;
 }
@@ -102,10 +102,12 @@
   text-decoration: none;
   color: #5a3921;
   font-weight: bold;
+  transition: color 0.2s;
+  margin: 0 0.5rem;
 }
 
 .add-to-cart {
-  background-color: #5afff4;
+  background-color: #ccbf0c;
   color: #333;
   padding: 10px 20px;
   border: none;
