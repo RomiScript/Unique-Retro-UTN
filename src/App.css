@@ -1,28 +1,36 @@
 #root {
-  max-width: 1280px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
+  background: #fff;
+  box-shadow: 0 2px 16px rgba(100, 108, 255, 0.05);
+  border-radius: 12px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  height: 5em;
+  padding: 1em;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 300ms;
+  display: inline-block;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.08) rotate(-4deg);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 footer {
-  margin-top: 2rem;
-  padding: 1rem;
-  background-color: #f8f8f8;
+  margin-top: 2.5rem;
+  padding: 1.5rem 1rem;
+  background-color: #f4f6fa;
   border-top: 1px solid #eaeaea;
+  color: #646cff;
+  font-size: 1rem;
+  border-radius: 0 0 12px 12px;
 }
 
 @keyframes logo-spin {
@@ -41,9 +49,17 @@ footer {
 }
 
 .card {
-  padding: 2em;
+  padding: 2em 1.5em;
+  margin: 1.5em auto;
+  background: #f8f8ff;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(100, 108, 255, 0.07);
+  max-width: 480px;
 }
 
 .read-the-docs {
   color: #888;
+  font-size: 0.95em;
+  margin-top: 1em;
+  letter-spacing: 0.02em;
 }

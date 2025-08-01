@@ -1,41 +1,46 @@
-/* No quedó exactamente con la estética que tenía en mente, pero va a mejorar practicvando más CSS puro*/
-
-
 .banner {
-  background-color: #5a3921; 
-  color: #f8f1e7; 
+  background-color: #f7c873;
+  color: #2d1e2f;
   padding: 2rem;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  background-image:
+    linear-gradient(rgba(255, 228, 181, 0.7), rgba(255, 228, 181, 0.7)),
+    url("https://images.unsplash.com/photo-1557180295-76eee20ae8aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJldHJvfGVufDB8fDB8fHww");
+  border: 8px solid #e85d04;
+  box-shadow: 0 0 40px 0 #e85d04, 0 0 0 10px #fffbe6;
 }
 
+.banner-container {
+  text-align: center;
+  padding: 12% 0;
+}
 
+.banner h1 {
+  margin: 0;
+  color: #e85d04;
+  text-shadow:
+    2px 2px 0 #fffbe6,
+    4px 4px 0 #2d1e2f;
+  font-size: 64px;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
 
-.banner {
-    background-size: cover;
-    background-position: center;
-    height: 80vh;
-  
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url("https://images.unsplash.com/photo-1557180295-76eee20ae8aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fHJldHJvfGVufDB8fDB8fHww");
-  }
-  
-  .banner-container {
-    text-align: center;
-    padding: 15% 0;
-  }
-  
-  .banner h1 {
-    margin: 0;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    font-size: 62px;
-    font-weight: bold;
-  }
-  
-  .banner p {
-    font-size: 30px;
-    color: white;
-    opacity: 0.7;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-  }
+.banner p {
+  font-size: 28px;
+  color: #2d1e2f;
+  opacity: 0.85;
+  text-shadow:
+    1px 1px 0 #fffbe6,
+    2px 2px 0 #e85d04;
+  font-family: 'Press Start 2P', 'Courier New', Courier, monospace;
+  letter-spacing: 2px;
+}
+
+/* Add retro font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
   

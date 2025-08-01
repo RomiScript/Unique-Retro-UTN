@@ -1,21 +1,22 @@
-
 .auth-container {
   max-width: 400px;
   margin: 2rem auto;
   padding: 2rem;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  font-family: 'Segoe UI', sans-serif;
+  background: #fbeee0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px #c9a06c, 0 0 0 8px #f7d9a8 inset;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  border: 4px solid #a67c52;
 }
 
 .auth-container h2 {
   text-align: center;
-  color: #5a3921;
+  color: #a67c52;
   margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #fffbe6, 0 0 8px #c9a06c;
 }
-
 
 .auth-container form {
   display: flex;
@@ -25,100 +26,124 @@
 
 .auth-container input {
   width: 100%;
-  padding: 12px 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  padding: 10px 14px;
+  border: 2px solid #a67c52;
+  border-radius: 0;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  background: #fffbe6;
+  color: #5a3921;
+  font-family: inherit;
+  box-shadow: 2px 2px 0 #c9a06c;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .auth-container input:focus {
-  border-color: #5a3921;
+  border-color: #d4af37;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(90, 57, 33, 0.1);
+  box-shadow: 0 0 0 4px #f7d9a8;
 }
 
-/* Botón */
 .auth-container button {
   padding: 12px;
-  background-color: #5a3921;
-  color: white;
-  border: none;
-  border-radius: 8px;
+  background: linear-gradient(90deg, #d4af37 0%, #a67c52 100%);
+  color: #fffbe6;
+  border: 2px solid #a67c52;
+  border-radius: 0;
   font-size: 1rem;
-  font-weight: 500;
+  font-family: inherit;
+  font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  box-shadow: 2px 2px 0 #c9a06c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, box-shadow 0.3s;
 }
 
 .auth-container button:hover {
-  background-color: #3a2414;
+  background: linear-gradient(90deg, #a67c52 0%, #d4af37 100%);
+  box-shadow: 4px 4px 0 #c9a06c;
 }
 
-/* Mensajes */
+.auth-container *, .auth-container *::before, .auth-container *::after {
+  box-sizing: border-box;
+}
+
 .error {
   color: #d32f2f;
-  background: #fce4e4;
+  background: #fff0f0;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 0;
+  border: 2px dashed #d32f2f;
   margin-bottom: 1rem;
   text-align: center;
   font-size: 0.9rem;
+  font-family: inherit;
+  box-shadow: 2px 2px 0 #c9a06c;
 }
 
 .auth-link {
   display: block;
   text-align: center;
   margin-top: 1.5rem;
-  color: #5a3921;
-  text-decoration: none;
-  font-weight: 500;
+  color: #a67c52;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: inherit;
+  letter-spacing: 1px;
   transition: color 0.3s;
 }
 
 .auth-link:hover {
-  text-decoration: underline;
+  color: #d4af37;
+  text-decoration: underline wavy;
 }
-
 
 .success-message {
   text-align: center;
   padding: 2rem;
-  background: #f6fff7;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.1);
+  background: #e0ffe0;
+  border-radius: 0;
+  border: 2px solid #388e3c;
+  box-shadow: 2px 2px 0 #c9a06c;
+  font-family: inherit;
 }
 
 .success-message h2 {
   color: #388e3c;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 0 #fffbe6;
 }
 
 .success-message p {
   color: #666;
   margin-bottom: 1.5rem;
+  font-family: inherit;
 }
 
 .spinner {
-  border: 4px solid rgba(0, 0, 0, 0.07);
+  border: 4px solid #fbeee0;
   border-radius: 50%;
-  border-top: 4px solid #388e3c;
+  border-top: 4px solid #d4af37;
   width: 32px;
   height: 32px;
   animation: spin 0.8s linear infinite;
   margin: 0 auto;
+  box-shadow: 2px 2px 0 #c9a06c;
 }
-
 
 button:disabled {
   background-color: #e0e0e0 !important;
   color: #888 !important;
   cursor: not-allowed !important;
-  border: 1px solid #bdbdbd !important;
+  border: 2px solid #bdbdbd !important;
+  box-shadow: none !important;
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* Add retro font if available */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
